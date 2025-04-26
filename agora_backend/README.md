@@ -13,7 +13,7 @@ This small Node.js server generates Agora tokens for secure video call sessions.
 ## Setup
 
 ```bash
-cd agora-backend
+cd agora_backend
 npm install
 npm start
 ```
