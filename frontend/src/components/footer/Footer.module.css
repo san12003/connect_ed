@@ -1,0 +1,31 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #f9fafb;
+    font-size: 0.9rem;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+}
+
+.links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

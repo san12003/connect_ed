@@ -1,0 +1,51 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--tertiary_color);
+    border-bottom: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    font-size: 2rem;
+    height: 100%;
+}
+
+.link {
+    color: rgba(22, 27, 25, 0.46);
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.link:hover {
+    color: var(--primary_color);
+}
+
+.active {
+    color: rgba(22, 27, 25, 0.69);
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(194, 225, 228, 0.57);
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}

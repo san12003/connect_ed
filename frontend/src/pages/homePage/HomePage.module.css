@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr;
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.14fr 0.14fr;
+    grid-template-rows: 1fr;
+    margin: 0 20px;
+    justify-items: center;
+    align-items: center;
+    grid-row: 1 / 2;
+
+    .logo {
+        color: var(--text_color);
+        cursor: pointer;
+    }
+    .login_btn {
+        grid-column: 3 / 4;
+        cursor: pointer;
+        color: var(--text_color);
+        &:active,
+        &:hover {
+            color: var(--primary_color);
+        }
+        transition: all 0.3s ease;
+    }
+}
+.body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary_color);
+    text-align: center;
+
+    .body_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        .heading {
+            color: var(--tertiary_color);
+            font-size: 4rem;
+            width: 60%;
+            margin: 0;
+        }
+
+        .description {
+            color: var(--tertiary_color);
+            width: 35%;
+            font-size: 1.1rem;
+            font-weight: lighter;
+        }
+
+        .btn_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 50px;
+        }
+    }
+}
+
+.footer {
+    display: grid;
+    margin: 0 20px;
+    grid-template-columns: 1fr 2fr auto auto auto;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    grid-row: 3 / 4;
+
+    p {
+        margin: 0;
+    }
+
+    .tos_btn {
+        grid-column: 3 / 4;
+        cursor: pointer;
+    }
+
+    .pp_btn {
+        cursor: pointer;
+    }
+
+    .help_btn {
+        cursor: pointer;
+    }
+}

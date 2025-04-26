@@ -1,0 +1,69 @@
+.popup {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    height:100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    display: grid;
+    gap: 1rem;
+}
+
+.popup h2 {
+    background:var(--primary_color);
+    color: var(--tertiary_color);
+    padding: 12px 16px;
+    margin: -24px -24px 0 -24px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.2rem;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.timeRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.cancel {
+    background: #f3f4f6;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.schedule {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
