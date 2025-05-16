@@ -24,7 +24,7 @@ function Dashboard() {
         const getData = async () => {
             try {
                 setIsLoading(true);
-                const response = await fetch(`https://connect-ed-7pog.onrender.com/getAllSchedules?email=${localStorage.getItem("email")}`, {
+                const response = await fetch(`https://connect-ed-backend-u0ec.onrender.com/getAllSchedules?email=${localStorage.getItem("email")}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -58,7 +58,7 @@ function Dashboard() {
     const handleDelete = async (meetingId) => {
         try{
             setIsLoading(true);
-            const response = await fetch(`https://connect-ed-7pog.onrender.com/deleteSchedule?email=${localStorage.getItem("email")}&id=${meetingId}`, {
+            const response = await fetch(`https://connect-ed-backend-u0ec.onrender.com/deleteSchedule?email=${localStorage.getItem("email")}&id=${meetingId}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,

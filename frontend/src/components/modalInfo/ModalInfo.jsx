@@ -59,7 +59,7 @@ function ModalInfo({onClose,date, events}) {
 
         try {
             setIsLoading(true);
-            const response = await fetch("https://connect-ed-7pog.onrender.com/scheduleMeet", {
+            const response = await fetch("https://connect-ed-backend-u0ec.onrender.com/scheduleMeet", {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

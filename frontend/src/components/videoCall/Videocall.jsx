@@ -55,7 +55,7 @@ const VideoCall = () => {
                 console.warn("Already connected or connecting.");
                 return;
             }
-            const res = await axios.get(`https://agora-p6gv.onrender.com/generate-token?channel=${channelName}`);
+            const res = await axios.get(`https://connect-ed-agora.onrender.com/generate-token?channel=${channelName}`);
             const { token, appId } = res.data
             const UID = await client.join(appId, channelName, token, null)
 

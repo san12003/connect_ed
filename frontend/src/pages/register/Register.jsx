@@ -22,7 +22,7 @@ function Register() {
     async function handleSubmit() {
         try {
             setIsLoading(true);
-            const response = await fetch('https://connect-ed-7pog.onrender.com/auth/register', {
+            const response = await fetch('https://connect-ed-backend-u0ec.onrender.com/auth/register', {
                 method: "POST",
                 body: JSON.stringify({
                     name: name,

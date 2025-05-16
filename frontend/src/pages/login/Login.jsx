@@ -16,7 +16,7 @@ function Login({ email, setEmail }) {
     async function handleSubmit() {
         try {
             setIsLoading(true);
-            const response = await fetch ('https://connect-ed-7pog.onrender.com/auth/login', {
+            const response = await fetch ('https://connect-ed-backend-u0ec.onrender.com/auth/login', {
                 method: 'POST',
                 body: JSON.stringify({
                     email: email,
@@ -28,7 +28,7 @@ function Login({ email, setEmail }) {
             })
             const data = await response.json();
             setToken(data.token);
-            const authStatus = await fetch('https://connect-ed-7pog.onrender.com/auth/protected', {
+            const authStatus = await fetch('https://connect-ed-backend-u0ec.onrender.com/auth/protected', {
                 method: 'GET',
                 headers: {
                     authorization: `Bearer ${data.token}`,

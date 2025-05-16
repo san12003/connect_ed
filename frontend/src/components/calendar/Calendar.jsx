@@ -33,7 +33,7 @@ function Calendar() {
         const fetchEvents = async () => {
             try {
                 setIsLoading(true);
-                const response = await fetch(`https://connect-ed-7pog.onrender.com/fullCalendar?email=${localStorage.getItem("email")}`, {
+                const response = await fetch(`https://connect-ed-backend-u0ec.onrender.com/fullCalendar?email=${localStorage.getItem("email")}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,

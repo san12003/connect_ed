@@ -27,7 +27,7 @@ function MeetInfo({data, onClose, onDelete}) {
     const handleResendEmail = async () => {
         try {
             setIsLoading(true);
-            const response = await fetch('https://connect-ed-7pog.onrender.com/resendEmail', {
+            const response = await fetch('https://connect-ed-backend-u0ec.onrender.com/resendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
