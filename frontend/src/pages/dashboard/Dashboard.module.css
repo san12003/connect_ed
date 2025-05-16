@@ -1,0 +1,98 @@
+.dashContainer {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+.headerContainer {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.body {
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    margin: 2rem 0;
+    /*gap: 1.5rem;*/
+}
+
+.body h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.subBody {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.subBody p::before {
+    content: "•";
+    color: #22c55e;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.subBody button {
+    background-color: #3F4FCC;
+    height: 3rem;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.subBody button:hover {
+    background-color: #2563eb;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+
+.footerContainer {
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modalContent {
+    background-color: var(--tertiary_color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 500px;
+    width: 80%;
+    border-radius: 20px;
+}
+

@@ -1,0 +1,41 @@
+.mainContainer{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+.body {
+    padding: 2rem 3rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    /*gap: 1.5rem;*/
+}
+body h1 {
+    margin:0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.subBody p {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgba(75, 85, 99, 0.58);
+    margin:0 0 1rem 0;
+}
+.headerContainer {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.footerContainer {
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    color: #6b7280;
+}

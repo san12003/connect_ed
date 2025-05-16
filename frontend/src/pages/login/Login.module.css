@@ -1,0 +1,91 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    background: var(--tertiary_color);
+
+    .heading {
+        align-self: end;
+        font-weight: bolder;
+    }
+
+    .create_account_link {
+        align-self: start;
+        color: var(--primary_color);
+        margin: 0;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr 0.2fr 1fr;
+        align-items: center;
+        width: 30%;
+        background: white;
+        padding: 3% 3% 0 3%;
+        border-radius: 12px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 3% 0;
+        .input {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 1fr;
+            height: 100%;
+
+            p {
+                margin: 2%;
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+
+            input {
+                height: 70%;
+                margin: 0 0 10% 0;
+                padding: 3px 10px;
+                border-radius: 8px;
+                border: 1px solid var(--placeholder_color);
+            }
+        }
+
+        button {
+            background: var(--primary_color);
+            color: white;
+            height: 50%;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 10% 0;
+        }
+
+        .question {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 0.5fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+
+            div {
+                height: 2px;
+                width: 100%;
+                background: var(--placeholder_color);
+            }
+
+            p {
+                color: var(--placeholder_color);
+            }
+        }
+        h3 {
+            justify-self: center;
+            align-self: center;
+            color: var(--primary_color);
+            cursor: pointer;
+        }
+    }
+
+
+}

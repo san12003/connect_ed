@@ -1,0 +1,43 @@
+.cardContainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 0.75rem;
+    padding: 1rem 1rem 1.5rem 1rem ;
+    width: 80%;
+    height: 70%;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all ease-in-out 0.05s;
+    &:hover {
+        background-color: var(--secondary_color);
+        border: 2px solid var(--primary_color);
+    }
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.dayDate,
+.time,
+.mail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+    margin: 0 0 0 0.2rem;
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
